@@ -7,7 +7,7 @@
   </div>
 
   <div class="feedEntry" ng-class=checkActive($index) ng-repeat="feed in feeds" ng-click=loadfeed($index)>
-    <button type="button" class="glyphicon glyphicon-remove" ng-click=feeds.splice($index,1)>
+    <button type="button" class="glyphicon glyphicon-remove" ng-click=removeItem($index)>
     <span class="glyphicons glyphicons-remove-sign"></span>
   </button>
     {{feed}}
